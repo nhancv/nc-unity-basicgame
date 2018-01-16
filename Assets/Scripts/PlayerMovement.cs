@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+		Debug.Log (other);
 		if (other.transform.tag == "Goal") {
 			GameManger.CompleteLevel ();
 		}
